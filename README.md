@@ -55,6 +55,10 @@ You can control your LED board connected to Adafruit FT232H via a ROS topic.
     sudo udevadm control --reload-rules
     ```
 
+5. Connect your LED board to the FT232H
+
+    `DIN` of the LED board must be connect to the `D1 (MOSI)` port of the FT232H. Then, connect the FT232H to your computer.
+
 ## Demo
 
 Launch a demo application (without ROS server)
