@@ -1,0 +1,13 @@
+<launch>
+    <arg name="n_pixels" default="16" />
+    <arg name="demo" default="false" />
+    <arg name="command_topic" default="command" />
+
+    <env name="BLINKA_FT232H" value="1" />
+
+    <node pkg="led_circuit_ros" type="led_circuit_server.py" name="led_circuit_server" output="screen">
+        <param name="n_pixels" value="$(arg n_pixels)" />
+        <param name="demo" value="$(arg demo)" />
+        <remap from="command" to="$(arg command_topic)" />
+    </node>
+</launch>

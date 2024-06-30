@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>led_circuit_ros</name>
+  <version>0.0.0</version>
+  <description>The led_circuit_ros package</description>
+
+  <maintainer email="shunmo17@yahoo.co.jp">Shunmo17</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>catkin_virtualenv</build_depend>
+
+  <depend>led_circuit_msgs</depend>
+  <exec_depend>libusb-1.0</exec_depend>
+
+  <export>
+    <pip_requirements>requirements.txt</pip_requirements>
+  </export>
+</package>
